@@ -2,59 +2,13 @@
 
 This project delivers a **full-stack** analysis of Montreal’s public transit system by leveraging **GTFS schedule data**. It covers **data extraction, preprocessing, exploratory analysis, forecasting, SQL-based insights, and final visualizations in Tableau.**
 
-**Disclaimer:** The Transit Public API is used for demonstration purposes only. No static or real-time, public or private data from Transitapp was retrieved, used, stored, or analyzed.
+⚠️ **Disclaimer:** The Transit Public API is used for demonstration purposes only. No static or real-time, public or private data from Transitapp was retrieved, used, stored, or analyzed.
 
-**License Note:** The GTFS data used in this project is sourced from STM and subject to their terms of use. Data is shared here for educational and non-commercial purposes.
-
-## 📁 Project Structure
-
-Transit_Data_Project/
-|
-├── README.md
-├── requirements.txt               # Project dependencies
-├── Transit_API_Data_Extraction.ipynb
-├── GTFS_Data_Analysis.ipynb
-├── Forecasting_Stop_Level_Departures.ipynb
-|
-├── gtfs/                          # Raw GTFS files (from STM)
-|
-├── gtfs_selective_columns.csv     # Clean dataset of top 30 busiest stops
-|
-├── SQL/
-|   ├── *.sql                      # SQL query files
-|   └── Transit_SQL_Findings.txt  # Summary of SQL insights
-|
-├── Tableau/
-|   ├── transit_viz.twbx          # Tableau dashboards
-|   ├── transit_viz.twb
-|   └── Tableau_Visualization_Findings.txt
-|
-├── config.py                     # Removed for security reasons
-
+⚠️ **License Note:** The GTFS data used in this project is sourced from STM and subject to their terms of use. Data is shared here for educational and non-commercial purposes.
 
 ⚠️ **Note:** The stop_times.txt file (part of GTFS) exceeds GitHub's size limit and therefore the GTFS directory is excluded from this repository. You can download the full GTFS dataset directly from STM's official site here:
 https://www.stm.info/en/about/developers
 
-
-## Project Snapshots
-
-Below are the four dashboards included in the Tableau story, visualized as static snapshots. These views showcase the top 10 busiest stops, but the number of stops displayed can be adjusted dynamically using a **'Top N' parameter** in the Tableau story.
-
-#### Overview Dashboard
-
-![Overview Dashboard](images/dashboard_overview.png)
-
-#### Stop-Level Activity
-
-![Stop-Level Activity Dashboard](images/stop-Level.png)
-
-#### Temporal Trends
-
-![Temporal Trends Dashboard](images/Temporal.png)
-
-#### Accessibility Gaps
-
-![Accessibility Gaps Dashboard](images/Accessibility.png)
 
 ## 🔹 Project Overview
 
@@ -122,6 +76,27 @@ Contains dashboards and findings built in Tableau:
 - **Tableau_Visualization_Findings.txt**: written summary of the Tableau insights
 
 Dashboards reflect and visualize outputs from the SQL and Python analyses.
+
+## Project Snapshots
+
+Below are the four dashboards included in the Tableau story, visualized as static snapshots. These views showcase the top 10 busiest stops, but the number of stops displayed can be adjusted dynamically using a **'Top N' parameter** in the Tableau story.
+
+#### Overview Dashboard
+
+![Overview Dashboard](images/dashboard_overview.png)
+
+#### Stop-Level Activity
+
+![Stop-Level Activity Dashboard](images/stop-Level.png)
+
+#### Temporal Trends
+
+![Temporal Trends Dashboard](images/Temporal.png)
+
+#### Accessibility Gaps
+
+![Accessibility Gaps Dashboard](images/Accessibility.png)
+
 
 ## 📦 Data Sources
 
