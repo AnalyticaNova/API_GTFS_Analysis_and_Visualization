@@ -77,6 +77,13 @@ Contains dashboards and findings built in Tableau:
 
 Dashboards reflect and visualize outputs from the SQL and Python analyses.
 
+## Interactive Tableau Story
+
+You can explore the full interactive Tableau Story here:
+
+👉 [View on Tableau Public](https://public.tableau.com/views/GTFSMontreal-Top30BusiestStops/Story)
+
+
 ## Project Snapshots
 
 Below are the four dashboards included in the Tableau story, visualized as static snapshots. These views showcase the top 10 busiest stops, but the number of stops displayed can be adjusted dynamically using a **'Top N' parameter** in the Tableau story.
