@@ -71,7 +71,7 @@ All .sql files contain inline comments with query results. Summary insights are 
 
 Contains dashboards and findings built in Tableau:
 
-- **transit_viz.twb** and **transit_viz.twbx**: full workbooks with 4 dashboards in the "Story" tab
+- **transit_viz.twb**
 
 - **Tableau_Visualization_Findings.txt**: written summary of the Tableau insights
 
@@ -109,17 +109,13 @@ Below are the four dashboards included in the Tableau story, visualized as stati
 
 - GTFS Static Feed (from STM)
 
-Stored in the /gtfs/ directory. Key files include:
+Key files include: 
 
 **routes.txt, trips.txt, stop_times.txt, stops.txt, calendar.txt, and more**
 
 **Source: Société de transport de Montréal (STM)**
 
-gtfs_selective_columns.csv
-
-Created by the forecasting notebook
-
-Contains features and summaries for the top 30 busiest stops
+"gtfs_selective_columns.csv" will be created if you run forecasting notebook, which contains features and summaries for the top 30 busiest stops
 
 ## ⚙️ Setup Instructions
 
