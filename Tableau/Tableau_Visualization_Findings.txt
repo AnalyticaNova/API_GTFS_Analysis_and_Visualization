@@ -1,0 +1,64 @@
+
+Montreal Transit Dashboard Analysis – Tableau Findings
+======================================================
+
+This report presents key insights from Tableau visualizations built using GTFS transit data for Montreal.
+The analysis is grouped into three themes: transit activity volume, rider behavior across time, and accessibility of the network.
+
+The findings were derived from four interactive dashboards in Tableau Public (as part of the final story). These visualizations complement the SQL analysis and Python-based preprocessing.
+
+--------------------------------------------------
+1 - Where Are We Busy?
+--------------------------------------------------
+
+🔹 We identified major transit hubs with the highest departure activity.
+
+Top 3 busiest stops:
+- Station Lionel-Groulx
+- Station Henri-Bourassa
+- Angrignon / Tours Angrignon
+
+These are critical transfer points between bus and metro lines, handling thousands of daily departures.
+
+--------------------------------------------------
+2 - When Do Riders Move?
+--------------------------------------------------
+
+🔹 Peak hours were clearly identified:
+
+- Morning Rush: 6:00 AM – 9:00 AM
+- Evening Rush: 4:00 PM – 6:00 PM
+
+** Service drops sharply after midnight. Hours beyond 24 represent overnight services.
+
+** Weekday vs Weekend Service:
+- Weekdays: 55% of total departures
+- Weekends: 45%
+
+--------------------------------------------------
+3 - How Accessible Is the Network?
+--------------------------------------------------
+
+🔹 Several high-traffic stops lack confirmed wheelchair access.
+
+Examples include:
+- Station De La Savane
+- Station Côte-Sainte-Catherine
+
+These stops were revealed by scatterplot analysis as high-demand yet inaccessible — candidates for accessibility upgrades.
+
+--------------------------------------------------
+✅ Final Notes
+--------------------------------------------------
+
+These Tableau dashboards were built for intuitive exploration, combining map views, line charts, heatmaps, and accessibility overlays.
+
+All preprocessing was completed in Python, including schedule enrichment, hourly grouping, and filtering top stops.
+
+The visuals align directly with the SQL queries and Python forecasting models for a full-stack transit analysis.
+
+======================================================
+📫 For more projects and contact details:
+
+GitHub: https://github.com/AnalyticaNova
+LinkedIn: https://www.linkedin.com/in/nedaetebari/

@@ -1,0 +1,72 @@
+Transit Network SQL Analysis – Summary of Findings
+==================================================
+
+This report highlights key findings from exploratory SQL analysis using GTFS transit data.
+The analysis is grouped into three core themes: transit traffic volume, temporal service patterns, and accessibility equity — mirroring the structure used in the Tableau visualizations.
+
+--------------------------------------------------
+1- Transit Traffic: Where Are We Busy?
+--------------------------------------------------
+
+🔹 Q1.1 – Top 10 Busiest Stops:
+We identified the stops with the highest number of scheduled departures.
+Top 3 busiest stops:
+- Station Lionel-Groulx
+- Station Henri-Bourassa
+- Angrignon / Tours Angrignon
+
+🔹 Q1.2 – Which Routes Serve the Top 5 Stops Most?
+
+Each of the top stops is served by multiple routes. For example:
+- Angrignon / Tours Angrignon is served by: Newman, Jolicoeur, Monk, Centrale, Dorval/Angrignon
+- Station Lionel-Groulx is served by metro lines: Ligne 1 - Verte and Ligne 2 - Orange
+
+--------------------------------------------------
+2 - Temporal Dynamics: When Do Riders Move?
+--------------------------------------------------
+
+🔹 Q2.2 – Hourly Departure Patterns by Weekday vs. Weekend:
+We compared weekday and weekend departures hour by hour.
+
+***Key Takeaways:
+- Service begins as early as 4–5 AM and peaks between 6:00–9:00 and 16:00–18:00.
+- Weekday service volume consistently exceeds weekend service (55% vs 45%).
+- After midnight (hours > 24), service drops significantly.
+
+--------------------------------------------------
+3 - Accessibility: Are High-Traffic Areas Equitably Served?
+--------------------------------------------------
+
+🔹 Q3.1 – Which High-Traffic Stops Lack Accessibility?
+We identified the top 10 busiest stops with no recorded wheelchair access (wheelchair_boarding = 2):
+Examples include:
+- Station De La Savane
+- Station Côte-Sainte-Catherine
+- Station Laurier
+- Station Jarry
+- Station Beaubien
+
+These stops should be prioritized for accessibility audits or upgrades.
+
+🔹 Q3.2 – What’s the Accessibility Rate Per Route?
+We calculated the percentage of departures that are wheelchair accessible on each route.
+
+- Most bus routes show 100% accessibility.
+- Ligne 2 - Orange (metro): Only 54% of departures are marked as accessible — highlighting a gap in access on one of the busiest lines.
+
+--------------------------------------------------
+✅ Conclusion
+--------------------------------------------------
+
+This SQL-based exploration allowed us to:
+- Quantify demand at specific stops
+- Analyze when the service is busiest
+- Uncover accessibility mismatches between ridership and infrastructure
+
+These insights complement visual Tableau dashboards and forecasting models developed in this project.
+
+======================================================
+📫 For more projects and contact details:
+
+GitHub: https://github.com/AnalyticaNova
+LinkedIn: https://www.linkedin.com/in/nedaetebari/

@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.DS_Store
+.env
+Python
+#
+gtfs
+/gtfs/
+
+SQL/.DS_Store
+Tableau/.DS_Store
+images/.DS_Store
+gtfs/.DS_Store
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+*.swp
+*.bak
+
+# Jupyter-related
+.ipynb_checkpoints/
+
+# macOS auto-generated
+__MACOSX/
+
+# API keys or credentials
+config.py
+.env
+
+# Notebook outputs or temporary files
+*.csv
+*.log
+*.tmp
+
+# Tableau files 
+#Tableau/*.twb
+Tableau/*.twbx
+Tableau/*.twbr
+
+config.py
+
+# Backup files
+*~
+.ipynb_checkpoints
